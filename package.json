@@ -1,0 +1,8 @@
+{
+  "name": "hypll",
+  "version": "1.0.0",
+  "description": "Website for hypll",
+  "scripts": {
+    "dev": "npx live-server --port=8080"
+  }
+}

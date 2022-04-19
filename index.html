@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Path: /*/**/ -->
+    <!-- ALl required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A bunch of nerds who bring cool products. Open source and closed."
+    />
+    <meta name="theme-color" content="#ffc107" />
+
+    <meta
+      name="keywords"
+      content="code, javascript, nerds,, open source, llc, hypll, hypll llc"
+      <meta
+      name="author"
+      content="Hypll"
+    />
+
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="apple-touch-icon" href="assets/icon.png" />
+
+    <!-- HypeStyle CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/hypestyle@0.1.5/dist/css/hypestyle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <style>
+      /* ---- reset ---- */
+      body {
+        margin: 0;
+        font: normal 75% Arial, Helvetica, sans-serif;
+      }
+      canvas {
+        display: block;
+        vertical-align: bottom;
+      } /* ---- particles.js container ---- */
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #141419;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      } /* ---- stats.js ---- */
+      .count-particles {
+        background: #000022;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 80px;
+        color: #13e8e9;
+        font-size: 0.8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px;
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+      }
+      .js-count-particles {
+        font-size: 1.1em;
+      }
+      #stats,
+      .count-particles {
+        -webkit-user-select: none;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+      #stats {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+      }
+      .count-particles {
+        border-radius: 0 0 3px 3px;
+      }
+    </style> -->
+
+    <title>Hypll LLC</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="navbar mt-1">
+      <img src="assets/icon.png" alt="icon" class="icon" />
+
+      <ul class="display-flex mr-4" id="hamburger">
+        <li class="text-white ml-2">
+          <a href="/" class="nav-item active">Home</a>
+        </li>
+        <li class="text-white ml-2">
+          <a href="#news_letter" class="nav-item">News letter</a>
+        </li>
+        <li class="text-white ml-2">
+          <a href="mailto:support@hypll.org" class="nav-item">Contact</a>
+        </li>
+      </ul>
+
+      <svg
+        class="w-6 h-6 display-none c-pointer"
+        id="hamburger-btn"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </header>
+
+    <div>
+      <ul class="display-flex mr-4 justify-center" id="hamburger-mobile">
+        <li class="text-white ml-2">
+          <a href="/" class="nav-item active">Home</a>
+        </li>
+        <li class="text-white ml-2">
+          <a href="#news_letter" class="nav-item">News letter</a>
+        </li>
+        <li class="text-white ml-2">
+          <a href="mailto:support@hypll.org" class="nav-item">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <main class="main__content">
+      <div class="container">
+        <h2 class="text-white font-xl mb-2">Hypll LLC</h2>
+
+        <p class="text-gray-light-3 mb-2">
+          A bunch of nerds who bring cool products. Open source and closed.
+        </p>
+
+        <button type="button" class="btn btn-join">
+          <a href="#news_letter" class="text-white"
+            ><i class="fa-solid fa-plus"></i> Join our newsletter
+          </a>
+        </button>
+      </div>
+    </main>
+
+    <hr />
+
+    <div class="container">
+      <form class="form-inline mt-2" id="news_letter" action="/thanks">
+        <div class="mb-2 mt-2">
+          <h1 class="form-title">Newsletter</h1>
+          <p class="form-about mt-1">
+            Sign up to receive updates on new products and services. No spam.
+            Unsubscribe at any time.
+          </p>
+        </div>
+        <div class="form-group mb-2">
+          <label for="email" class="sr-only">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Email"
+          />
+          <div class="text-error mt-2 display-none" id="error">
+            <p>
+              <i class="fas fa-exclamation-circle"></i> Please enter a valid
+              email address.
+            </p>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-form c-not-allowed"
+          id="submit"
+          disabled
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <!-- <div id="particles-js"></div> -->
+
+    <!-- scripts -->
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: false, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.7970391180485954,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3.945738208161363,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

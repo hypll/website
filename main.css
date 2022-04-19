@@ -1,0 +1,235 @@
+/*
+  *
+  *
+  *
+
+  This website was created with Hypestyle-cli
+  You find all the docs for Hypestyle 
+  in the following link: https://hypestyle.netlify.app
+  Copyright (c) 2022, Hypestyle
+
+  *
+  *
+  *
+  
+*/
+
+/*
+
+    You can start use your own css code if you want to make some changes
+    of components or add some new components.
+
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #141419;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+hr {
+  margin: auto;
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #30303b,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.navbar {
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  background-color: #141419;
+  z-index: 1;
+}
+
+#hamburger-mobile {
+  display: none;
+}
+
+#hamburger-mobile.show {
+  display: flex;
+}
+
+.icon {
+  width: 3rem;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.active {
+  font-weight: 400 !important;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #ffc107;
+  color: white;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  color: #484a4d;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #ffc107;
+  color: white;
+  transform: scale(1.1);
+}
+
+.main__content {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.btn-join {
+  background-color: #2388a8;
+  color: white;
+  border: none;
+  padding: 0.7rem 3rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-join:hover {
+  background-color: #2f9cbd;
+  color: white;
+  border: none;
+  padding: 0.7rem 3rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  transform: scale(0.9);
+}
+
+.btn-home {
+  background-color: #a847b5;
+  color: white;
+  border: none;
+  padding: 0.7rem 3rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-home:hover {
+  background-color: #c358d1;
+  color: white;
+  border: none;
+  padding: 0.7rem 3rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  transform: scale(0.9);
+}
+
+/* form */
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #ffc107;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+
+.form-about {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #484a4d;
+}
+
+.btn-form {
+  padding: 0.7rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ffc107;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-form:hover {
+  background-color: #ffc107;
+  color: white;
+  transform: scale(1.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(255 193 7);
+  box-shadow: inset 0 1px 1px rgba(255 193 7), 0 0 8px rgba(255 193 7);
+}
+
+@media screen and (max-width: 700px) {
+  #hamburger {
+    display: none;
+  }
+
+  #hamburger-btn {
+    display: block;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-toggle {
+    display: block !important;
+    height: 130px;
+    background: #fff;
+  }
+
+  .nav-toggle:hover {
+    background-color: #e5e5e5;
+    justify-content: center;
+  }
+}
